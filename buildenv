@@ -5,3 +5,9 @@ export ZOPEN_TARBALL_DEPS="curl gzip tar make ncurses zoslib"
 export ZOPEN_TYPE="TARBALL"
 export ZOPEN_EXTRA_CPPFLAGS="-I\$NCURSES_HOME/include/ncurses"
 export ZOPEN_CHECK="skip"
+
+zopen_append_to_zoslib_env() {
+ cat <<EOF
+ASCII_TERMINFO|set|PROJECT_ROOT/../../ncurses/ncurses/share/terminfo/
+EOF
+}

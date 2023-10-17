@@ -1,6 +1,6 @@
 export ZOPEN_GIT_URL="git://g.blicky.net/ncdu.git/"
 export ZOPEN_GIT_DEPS="git make"
-export ZOPEN_TARBALL_URL="https://dev.yorhel.nl/download/ncdu-1.17.tar.gz"
+export ZOPEN_TARBALL_URL="https://dev.yorhel.nl/download/ncdu-1.19.tar.gz"
 export ZOPEN_TARBALL_DEPS="curl gzip tar make ncurses zoslib"
 export ZOPEN_TYPE="TARBALL"
 export ZOPEN_EXTRA_CPPFLAGS="-I\$NCURSES_HOME/include/ncurses"

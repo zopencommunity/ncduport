@@ -1,8 +1,13 @@
-export ZOPEN_GIT_URL="git://g.blicky.net/ncdu.git/"
-export ZOPEN_GIT_DEPS="git make"
-export ZOPEN_TARBALL_URL="https://dev.yorhel.nl/download/ncdu-1.19.tar.gz"
-export ZOPEN_TARBALL_DEPS="curl gzip tar make ncurses zoslib"
-export ZOPEN_TYPE="TARBALL"
+# bump: ncdu-1-version /NCDU_1_VERSION="(.*)"/ https://dev.yorhel.nl/download/|re:/ncdu-([\d.]+).tar.gz/$1/|semver:^1
+# bump: ncdu-2-version /NCDU_2_VERSION="(.*)"/ https://dev.yorhel.nl/download/|re:/ncdu-([\d.]+).tar.gz/$1/|semver:^2
+NCDU_1_VERSION="1.17"
+NCDU_2_VERSION="2.3"
+
+export ZOPEN_BUILD_LINE="STABLE"
+export ZOPEN_DEV_URL="git://g.blicky.net/ncdu.git/"
+export ZOPEN_DEV_DEPS="git make"
+export ZOPEN_STABLE_URL="https://dev.yorhel.nl/download/ncdu-${NCDU_1_VERSION}.tar.gz"
+export ZOPEN_STABLE_DEPS="curl gzip tar make ncurses zoslib"
 export ZOPEN_EXTRA_CPPFLAGS="-I\$NCURSES_HOME/include/ncurses"
 export ZOPEN_CHECK="skip"
 

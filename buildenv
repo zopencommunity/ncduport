@@ -1,6 +1,6 @@
 # bump: ncdu-1-version /NCDU_1_VERSION="(.*)"/ https://dev.yorhel.nl/download/|re:/ncdu-([\d.]+).tar.gz/$1/|semver:^1
 # bump: ncdu-2-version /NCDU_2_VERSION="(.*)"/ https://dev.yorhel.nl/download/|re:/ncdu-([\d.]+).tar.gz/$1/|semver:^2
-NCDU_1_VERSION="1.19"
+NCDU_1_VERSION="1.20"
 NCDU_2_VERSION="2.3"
 
 export ZOPEN_BUILD_LINE="STABLE"

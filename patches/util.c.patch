@@ -1,0 +1,13 @@
+diff --git a/src/util.c b/src/util.c
+index e387d74..2fd7c1f 100644
+--- a/src/util.c
++++ b/src/util.c
+@@ -34,7 +34,7 @@
+ #include <locale.h>
+ #endif
+ 
+-int uic_theme = 0;
++int uic_theme = 2;
+ int winrows, wincols;
+ int subwinr, subwinc;
+ static char thou_sep;

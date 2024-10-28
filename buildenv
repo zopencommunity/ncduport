@@ -2,6 +2,7 @@
 NCDU_1_VERSION="1.20"
 
 export ZOPEN_BUILD_LINE="STABLE"
+export ZOPEN_CATEGORIES="utilities"
 export ZOPEN_DEV_URL="git://g.blicky.net/ncdu.git/"
 export ZOPEN_DEV_DEPS="git make"
 export ZOPEN_STABLE_URL="https://dev.yorhel.nl/download/ncdu-${NCDU_1_VERSION}.tar.gz"
